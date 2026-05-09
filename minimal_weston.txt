@@ -1,0 +1,10 @@
+#
+# This is how to test the minial system is ready for wayland compositor.
+# Originally used in Alpine to ensure the state is correct for Hyprland.
+#
+
+# Packages to install:
+libweston weston weston-backend-drm weston-shell-desktop weston-terminal
+
+# This is the command to avoid seatd, log is optional, suppresses std!
+LIBSEAT_BACKEND=logind dbus-run-session weston --log=weston.log

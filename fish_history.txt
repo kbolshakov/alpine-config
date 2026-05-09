@@ -1,0 +1,354 @@
+history | less
+find apk
+find apk -type f
+cd /
+ll /usr/bin/ | less
+ll /usr/sbin/ | less
+ll /usr/sbin/
+ll /usr
+echo $PATH
+apk
+sudo ls /lost+found/
+sudo ll /lost+found/
+ll /lost+found/
+ll /
+ll
+ll /bin/apk
+ll /usr/bin/apk
+ash
+exit
+micro repositories
+cd /etc/apk
+ll /etc/apk/
+which apk
+micro /etc/apk/world
+apk info
+sudo apk search git
+mkdir alpine-config
+rm weston.log
+micro weston.log
+vim .
+pwd
+sudo poweroff
+fastfetch
+cat pkglist-apk.txt | wc -l
+cat world-bkp.txt | wc -l
+cat world-bkp.txt | less
+cp /etc/apk/world world-bkp.txt
+ll /etc/apk/world
+micro pkglist-apk.txt
+apk info >> pkglist-apk.txt
+micro minimal_weston.txt
+cat minimal_weston.txt
+echo "LIBSEAT_BACKEND=logind dbus-run-session weston --log=weston.log" >> minimal_weston.txt
+LIBSEAT_BACKEND=logind dbus-run-session weston --log=weston.log >> minimal_weston.txt
+echo "libweston weston weston-backend-drm weston-shell-desktop weston-terminal" >> minimal_weston.txt
+cat libweston weston weston-backend-drm weston-shell-desktop weston-terminal >> minimal_weston.txt
+btop
+free -h
+apk info -r | less
+apk info -r
+sudo apk del libweston weston weston-backend-drm weston-shell-desktop weston-terminal
+apk info | grep weston
+chsh
+which fish
+pkill weston
+LIBSEAT_BACKEND=logind dbus-run-session weston --log=weston.log
+sudo apk add weston-shell-desktop weston-terminal
+sudo apk search weston
+cat weston.log
+ps aux | grep weston
+LIBSEAT_BACKEND=logind dbus-run-session weston
+LIBSEAT_BACKEND=elogind dbus-run-session weston
+loginctl seat-status seat0
+ls /run/systemd/seats/
+strings /usr/lib/libseat.so.1 | grep seatd
+cat /usr/lib/libseat.so.1
+/usr/lib/libseat.so.1
+which libseat
+sudo apk add libseat
+sudo apk del libseat
+sudo apk del libseat seatd
+dbus-run-session weston --backend=drm-backend.so
+WESTON_DISABLE_SEATD=1 dbus-run-session weston
+sudo apk search seatd
+sudo apk search seatd-libseat
+dbus-run-session weston
+sudo apk add mesa-gbm libinput
+ls -l /dev/dri
+dbus-run-session -- weston
+apk info | grep seat
+sudo apk del seatd
+sudo rc-service seatd stop
+sudo apk add seatd
+sudo apk add weston-backend-drm
+sudo apk add weston*
+sudo apk add weston
+sudo apk info weston
+loginctl
+sudo reboot
+sudo micro login
+sudo micro /usr/lib/pam.d/login
+sudo cp /usr/lib/pam.d/login .
+cp /usr/lib/pam.d/login .
+sudo unlink login
+unlink login
+sudo ln -s /usr/lib/pam.d/login login
+sudo ln -s /usr/bin/pam.d/login login
+ln -s /usr/bin/pam.d/login login
+ll /usr/lib/pam.d/
+cd /etc/pam.d
+apk info -L shadow-login
+apk info -L util-linux-login
+apk info -L linux-pam | less
+apk info -L linux-pam
+apk info | grep login
+ll /etc/pam.d/
+sudo apk add util-linux-login
+sudo apk add util-linux
+sudo apk search login
+sudo apk add shadow-login
+sudo apk search shadow
+ps aux | grep elogind
+rc-service elogind status
+sudo micro /etc/pam.d/login
+find /etc/pam.d -type f | xargs grep elogind
+find /etc/pam.d -type f
+dbus-run-session -- fish
+sudo apk list --installed | grep shadow
+apk info | grep shadow
+sudo apk add shadow
+sudo apl add shadow
+rc-status -a
+rc-status
+sudo apk search linux-pam
+sudo apk list --installed | grep mesa
+sudo apk list --installed | grep pam
+apk info | grep pam
+apk list | grep pam
+ping 1.1.1.1
+sudo rc-update add elogind boot
+sudo rc-update del elogind
+sudo loginctl reboot
+groups
+loginctl reboot
+sudo micro /etc/doas.conf
+sudo /etc/doas.conf
+reboot
+sudo loginctl
+sudo rc-service elogind start
+sudo rc-update add elogind
+sudo apk add elogind
+which elogind
+lsblk
+sudo apk add lsblk
+sudo ls -l /etc/polkit-1/rules.d/
+sudo ll /etc/polkit-1/rules.d/
+ll /etc/polkit-1/rules.d/
+sudo rc-service polkit start
+sudo rc-update add dbus
+sudo rc-update add polkit
+sudo apk add polkit-elogind
+sudo apk search polkit-elogind
+sudo apk list --installed | grep polkit
+sudo apk list --installed | grep dbus
+sudo apk search elogind
+which chsh
+apk search chsh
+sudo mkinitfs
+mkinitfs
+sudo micro /etc/mkinitfs/mkinitfs.conf
+sudo apk list --installed | grep mkinit
+sudo apk add mkinitfs
+cat /etc/modules
+micro /etc/modules
+ll /etc/modules
+sudo echo amdgpu >> /etc/modules
+sudo touch /etc/modules
+echo amdgpu >> /etc/modules
+lspci -k | grep -EA3 "VGA|3D|Display"
+lspci -k | grep amd
+lspci -k
+sudo apk add pciutils
+apk list | grep pciutils
+apk list --installed | grep pciutils
+sudo apk add btop
+sudo apk search btop
+sudo apk add mesa-dri-gallium mesa-va-gallium mesa-vulkan-ati
+apk list | grep mesa
+sudo apk add mesa
+apk list --installed | grep mesa
+apk list --installed | grep ufw
+sudo apk add fastfetch
+apk list --installed | wc -l
+apk list --installed
+apk list --help | less
+apk list --help
+apk --help
+apk query --help
+apk query --installed all
+apk query --installed *
+apk query --help | less
+apk query --installed
+apk help
+apk info sudo
+sudo apk info linux-firmware-amdgpu
+sudo apk search linux-firmware-amdgpu info
+sudo apk add linux-firmware-amdgpu
+sudo apk search linux-firmware-amdgpu
+sudo apk searh linux-firmware-amdgpu
+apk search sudo
+apk list
+apk search apk
+man 8 apk
+man apk
+which man
+sudo apk add man-db
+sudo apk search man | less
+sudo apk add man
+sudo apk search man
+micro /etc/doas.conf
+sudo apk update
+mkdir Downloads
+mkdir Documents
+cd
+go
+sudo rm wifi_backend.conf
+rm wifi_backend.conf
+cd conf.d/
+cd /etc/NetworkManager/
+ll /etc/NetworkManager/
+sudo chronyc tracking
+chronyc tracking
+which chrony
+sudo ufw status verbose
+rc-service ufw status
+sudo rc-update add ufw default
+sudo rc-service ufw start
+sudo ufw status
+ufw status
+sudo ufw enable
+sudo ufw limit 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+setfont ter-v18b
+sudo -s
+sudo apk search consolefont
+sudo apk add ufw ufw-openrc
+sudo apk search ufw
+which ufw
+apk search tldr
+sudo apk search tldr
+which sudo
+doas apk add doas-sudo-shim
+apk info doas-sudo-shim
+clear
+nmtui
+doas apk search sudo
+date
+doas chronyc tracking
+doas rc-service udev-settle stop
+doas poweroff
+doas micro /etc/NetworkManager/NetworkManager.conf
+doas apk add networkmanager-wifi
+doas touch /etc/NetworkManager/NetworkManager.conf
+doas adduser aff plugdev
+doas apk add eudev-netifnames
+doas udevadm trigger
+doas udevadm control --reload-rules
+nmcli device status
+nmcli device wlan0 status
+doas rc-update add udev sysinit
+doas apk upgrade
+doas apk update
+doas setup-devd
+doas udhcpc -i wlan0
+udhcpc -i wlan0
+doas iwctl
+setup-devd
+which udev
+doas -s
+which setup-devd
+doas nmcli device status
+doas rc-service networkmanager restart
+doas rm NetworkManager.conf
+cd ../
+cd system-connections/
+grep -lR "manage"
+grep -R "manage"
+cat /etc/network/interfaces
+ll /etc/network/interfaces
+ps aux | grep -E "NetworkManager|iwd"
+doas nmcli device set wlan0 managed yes
+doas apk del connman
+ps aux | grep connman
+rc-service connman status
+doas nmcli status
+nmcli status
+doas rc-service iwd restart
+cat NetworkManager.conf
+doas micro NetworkManager.conf
+doas NetworkManager.conf
+micro NetworkManager.conf
+rc-update show | grep network
+ll conf.d/
+doas nmtui
+micro conf.d/wifi_backend.conf
+doas apk add networkmanager-tui
+doas apk add networkmanager-cli
+doas apk search nmtui
+doas apk search nmcli
+micro /etc/NetworkManager/NetworkManager.conf
+doas apk add micro
+rc-service networkmanager status
+ping 8.8.8.8
+iw dev wlan0 link
+ip link show wlan0
+doas udhcpc
+udhcpc
+doas reboot
+iwctl
+doas udhcpc6
+doas vim /etc/NetworkManager/NetworkManager.conf
+which NetworkManager
+NetworkManager device
+rc-service networkmanager restart
+ip a
+doas iwctl station wlan0 show
+doas iwctl station wlan0 scan
+iwctl station wlan0 show
+iwctl station wlan0 scan
+iwctl station scan
+iwctl station list
+iwctl help
+nmcli
+doas apk add nmtui
+NetworkManager --help
+NetworkManager
+doas rc-service networkmanager start
+rc-service networkmanager start
+rc-service iwd restart
+rc-service iwd start
+doas vim /etc/NetworkManager/conf.d/wifi_backend.conf
+doas touch /etc/NetworkManager/conf.d/wifi_backend.conf
+vim /etc/NetworkManager/conf.d/wifi_backend.conf
+rc-update show
+doas rc-update del networking
+doas rc-service networking stop
+doas rc-service wpa_supplicant stop
+doas rc-update add networkmanager default
+doas rc-update add iwd default
+doas rc-update del wpa_supplicant boot
+doas rc-update del wpa_supplicant
+rc-update del wpa_supplicant
+doas apk add networkmanager iwd iwd-openrc
+doas apk search networkmanager
+doas vim /etc/apk/repositories
+vim /etc/apk/repositories
+doas apk add vim
+apk search limine
+apk search vim
+apk search micro
+apk search network
