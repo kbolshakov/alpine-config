@@ -11,6 +11,7 @@ eudev
 eudev-netifnames
 fastfetch
 fish
+git
 grub-efi
 iw
 iwd

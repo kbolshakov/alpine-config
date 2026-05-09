@@ -50,6 +50,9 @@ fish
 flock
 fstrim
 gdbm
+git
+git-init-template
+git-perl
 glib
 gmp
 gnutls
@@ -189,6 +192,8 @@ pciutils-libs
 pcre2
 pcsc-lite-libs
 perl
+perl-error
+perl-git
 polkit-common
 polkit-elogind
 polkit-elogind-libs
