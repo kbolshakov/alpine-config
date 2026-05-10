@@ -1,0 +1,11 @@
+sudo apk add mousepad
+sudo apk add mesa-egl mesa-gl
+sudo apk add wayland-libs-egl
+sudo apk add foot
+sudo apk add wayland-libs-server wayland-libs-client wayland-utils
+sudo apk add font-inter font-fira-mono-nerd imv imv-wayland firefox papirus-icon-theme numix-icon-theme
+sudo apk add wl-clipboard wl-clipboard-fish-completion brightnessctl brightnessctl-openrc playerctl thunar thunar-volman file-roller
+sudo apk add pipewire pipewire-pulse pipewire-alsa pipewire-openrc pipewire-pulse-openrc wireplumber wireplumber-openrc wireplumber-logind
+sudo apk add niri xwayland xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-openrc waybar wofi mako mako-fish-completion kitty kitty-kitten kitty-terminfo kitty-wayland
+sudo apk add fish-tools
+sudo apk list --installed | grep fish
