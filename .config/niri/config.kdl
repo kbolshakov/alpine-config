@@ -315,7 +315,7 @@ layout {
 
 // These 2 lines start swww, the wallpaper tool of choice; the transition is for suture script
 spawn-sh-at-startup "swww-daemon &"
-spawn-sh-at-startup "sleep 0.5 && swww img ~/Pictures/wallpapers/MayoAgave.jpg --transition-type fade --transition-duration 5"
+spawn-sh-at-startup "sleep 0.5 && swww img ~/Pictures/wallpapers/AlabamaHills.jpg --transition-type fade --transition-duration 5"
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-sh-at-startup "waybar >~/waybar.log 2>&1"
 
