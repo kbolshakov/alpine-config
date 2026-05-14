@@ -89,6 +89,7 @@ swww
 swww-fish-completion
 thunar
 thunar-volman
+tree
 udev-init-scripts
 udev-init-scripts-openrc
 ufw

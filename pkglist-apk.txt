@@ -546,6 +546,7 @@ thunar-volman
 tiff
 tinysparql
 totem-pl-parser
+tree
 tslib
 tzdata
 udev-init-scripts
