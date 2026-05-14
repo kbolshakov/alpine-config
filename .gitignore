@@ -1,0 +1,29 @@
+# Runtime/editor junk
+.config/micro/backups/
+.config/micro/buffers/
+
+# Temporary htop files
+.config/htop/*.tmp.*
+
+# dconf runtime database
+.config/dconf/user
+
+# Fish generated state
+.config/fish/fish_history
+
+# Optional: generated fontconfig cache
+.config/fontconfig/conf.d/
+
+# Optional: GTK bookmarks/runtime state
+.config/gtk-3.0/bookmarks
+
+# Optional: Thumbnails/cache if they appear later
+.cache/
+
+# macOS junk (future-proofing)
+.DS_Store
+
+# Generic editor temp files
+*~
+*.swp
+*.swo
