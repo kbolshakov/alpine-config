@@ -1,0 +1,68 @@
+* {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+window#waybar {
+    background: rgba(36, 40, 59, 0.90);
+    color: #c0caf5;
+    border-bottom: 2px solid #414868;
+}
+
+
+
+#custom-menu {
+    padding: 0 12px;
+    color: #7aa2f7;
+    font-size: 22px;
+}
+
+#custom-menu:hover {
+    background: #414868;
+}
+
+
+
+#taskbar button {
+    color: #c0caf5;
+}
+
+#taskbar button.active {
+    background: #414868;
+    border-radius: 6px;
+}
+
+#taskbar button:hover {
+    background: #3b4261;
+}
+
+
+
+#workspaces button {
+    color: #c0caf5;
+    padding: 0 8px;
+}
+
+#workspaces button.active {
+    background: #414868;
+    border-radius: 6px;
+}
+
+#workspaces button:hover {
+    background: #3b4261;
+}
+
+
+#language,
+#temperature,
+#cpu,
+#memory {
+	font-family: "FiraMono Nerd Font";
+    font-size: 17px;
+    padding: 0 5px;
+}
+
+#clock {
+	padding: 0 8px;
+}

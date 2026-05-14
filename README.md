@@ -85,11 +85,18 @@ When all of this is in place, after reboot, `loginctl` should show `seat0, tty1,
 
 ## Known issues + lessons learned
 
+### Important TODO!
+Revice `fish_history.txt`, this has the history of how to get the elogind setup. It's likely simple, but needs to be extracted and documented!
+
 ### fish
 After elogind is working and the session is real, it is possible to switch the shell permanently with chsh.
 After switching, I observed that the PATH is not propagated. That is why using `ash`, the default shell (and maybe calling `fish`within) is safer.
 The PATH resolution is added to fish config of this depot. All the packages are very minimal and broken down into components.
 It looks like fish installation is not as full as on other distros, so it may be best to keep it minimal, at least for now.
+
+NOTE:
+Later discovery is that it's another packet fragmentation issue, which can be solved by installing `fish-tools` packet.
+Once installed, prompts and themes are available, but the default theme is onee of the best. Chose to customize Kitty color pallette.
 
 ### Graphical test with Weston
 The txt files contain all the necessary info. It was hard to figure out, but it's easy once the packages and commands are handy.

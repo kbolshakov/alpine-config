@@ -8,7 +8,7 @@ window {
     margin: 0px;
     border: 2px solid #414868;
     border-radius: 5px;
-    background-color: #24283b;
+    background-color: transparent;
     font-family: monospace;
     font-size: 12px;
 }
@@ -31,9 +31,9 @@ window {
 }
 
 #outer-box {
-    margin: 5px;
-    border: none;
     background-color: #24283b;
+    border: 2px solid #414868;
+    border-radius: 10px;
 }
 
 #scroll {

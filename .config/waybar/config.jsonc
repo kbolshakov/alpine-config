@@ -1,0 +1,100 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 5,
+    "margin": 0,
+
+    "modules-left": ["custom/menu", "wlr/taskbar"],
+    "modules-center": ["niri/window"],
+    "modules-right": ["niri/workspaces",   "temperature", "cpu", "memory", "niri/language", "clock"],
+    
+    
+    
+    "custom/menu": {
+		"format": "",
+		"tooltip": false,
+		"on-click": "wofi --show drun"
+	},
+	
+    "wlr/taskbar": {
+		"format": "{icon} {name}",
+		"icon-size": 22,
+		"icon-theme": "Numix",
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"grouped": true,
+		"sort-by-app-id": true, 
+		"ignore-list": [
+			"Alacritty"
+		]
+	},
+    
+    
+    
+    "niri/window": {
+    	"icon": false,
+    	"icon-size": 22,
+    	"format": "{}",
+    	"separate-outputs": true
+    },
+    
+    
+    
+    "niri/language": {
+		"format": "{shortDescription}",
+	},
+    
+    "temperature": {
+    	"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+		"critical-threshold": 85,
+		"format": ":{temperatureC}°",
+	},
+    "cpu": {
+        "format": " :{usage}%",
+        "tooltip": true,
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    "memory": {
+        "format": " :{}%",
+        "tooltip": true,
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    
+    "clock": {
+    	"interval": 1,
+    	"format": "{:%a %B %d  %H:%M}",
+        "timezone-tooltip-format": "{:%H:%M %Z}",
+        "timezones": [
+			"",
+			"America/Chicago",
+			"America/Los_Angeles",
+			"Europe/Paris",
+			"UTC"
+		],
+		"tooltip-format": "<big>{:%Y-%m-%d}</big> \n<tt><big>{calendar}</big></tt>",
+        "calendar": {
+        	"mode"			: "month",
+			"weeks-pos"     : "right",
+			"on-scroll"     : 1,
+			"on-click-right": "mode",
+			"format": {
+				"months":     "<span color='#ffead3'><b>{}</b></span>",
+				"days":       "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+				"today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+			},
+			"actions": {
+		        "on-click-right": "mode",
+		        "on-click-forward": "tz_up",
+		        "on-click-backward": "tz_down",
+		        "on-scroll-up": "shift_up",
+		        "on-scroll-down": "shift_down"
+		    }
+		},
+    }
+}

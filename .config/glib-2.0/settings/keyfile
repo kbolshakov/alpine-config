@@ -1,9 +1,9 @@
 [org/xfce/mousepad/state/application]
-session=['1;;+file:///home/aff/git/alpine-config/apk_history_niri_new.txt']
+session=['1;;+file:///home/aff/.config/kitty/kitty.conf', '1;;file:///home/aff/.config/niri/config.kdl', '1;;file:///home/aff/.config/waybar/config.jsonc', '1;;file:///home/aff/.config/waybar/style.css']
 
 [org/xfce/mousepad/state/window]
-width=1875
-height=1377
+width=1269
+height=1361
 maximized=false
 fullscreen=false
 
@@ -43,10 +43,10 @@ sort-order='ascending'
 type-format='category'
 
 [org/xfce/mousepad/state/search]
-search-history=['^#', '^#.*', '#.*', '#', 'fira', 'font_size', 'shell_integration', 'shell_integ', 'cursor', 'cursor_shape_unfocused', 'foreground']
-enable-regex=true
+search-history=['waybar', '+G', 'Mod+GG', 'Mod+', 'layer-rule {\n    match namespace="^wofi$"\n    shadow {\n        on\n    }\n}', 'spawn', 'layer', 'cursor', 'env', 'mouse', 'ring', '16161e', '1a1b26', 'window', '^#', '^#.*', '#.*', '#', 'fira', 'font_size']
+enable-regex=false
 replace-all=true
-match-case=true
+match-case=false
 
 [org/gtk/gtk4/settings/file-chooser]
 sort-directories-first=true
@@ -70,3 +70,6 @@ list-mode='as-folder'
 window-width=600
 window-height=480
 sidebar-width=200
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
